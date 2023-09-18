@@ -1,0 +1,248 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root{
+    /* Colors */
+
+    /* Primary */
+
+--Red: hsl(0, 100%, 74%);
+--Green: hsl(154, 59%, 51%);
+
+    /* Accent */
+
+--Blue: hsl(248, 32%, 49%);
+
+    /* Neutral */
+
+--DarkBlue: hsl(249, 10%, 26%);
+--GrayishBlue: hsl(246, 25%, 77%);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* border: 4px solid red; */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    background-image: url('./images/bg-intro-desktop.png');
+    background-color: var(--Red);
+    /* font-family: 'Poppins', sans-serif; */
+    
+}
+.container{
+    /* border: 4px solid green; */
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: auto;
+}
+.container1{
+    /* border: 4px solid yellow; */
+    width: 40%;
+    padding: 0.7rem;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    color: white;
+    font-family:Poppins;
+    
+
+}
+.container1 h1{
+    /* border: 2px solid red; */
+    width: 90%;
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    line-height: 2.7rem;
+
+} 
+.container1 p{
+    width: 100%;
+   font-size: 0.8rem;
+   line-height: 1.3rem;
+   font-weight: 500;
+   
+}
+.container2{
+    /* border: 4px solid yellow; */
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+   align-items: center;
+   font-family:Poppins;
+}
+.box1{
+    width: 95%;
+    background-color: var(--Blue);
+    /* padding: 0.3rem; */
+    border-radius: 10px;
+    box-shadow: 0px 7px hsla(249, 10%, 26%, 0.4);
+}
+.box1 h2{
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 1.1rem;
+    color: white;
+}
+.box1 span{
+    opacity: 0.5;
+    font-weight: lighter;
+}
+.field-container{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    gap: 0.8rem;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 7px hsla(249, 10%, 26%, 0.4);
+}
+.field-group{
+    padding: 0.5rem;
+}
+.field-container input{
+    width: 100%;
+    padding: 0.8rem ;
+    border-radius: 5px;
+    border: 1px solid var(--GrayishBlue);
+}
+.field-group input:focus{
+    border: 1.5px solid hsl(249, 10%, 26%);
+
+}
+.field-group input::placeholder{
+    color: hsl(249, 10%, 26%, 0.6);
+    font-size: 1rem;
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+.error-icon,
+.error-text{
+    display: none;
+}
+.field-group.error .error-icon,
+.field-group.error .error-text{
+    display: block;
+}
+.field-group.error input{
+    border: 2px solid var(--Red);
+}
+.error-icon{  
+    
+    position: absolute;
+    padding-top: 0.5rem;
+    right: 200px;
+   
+    transform: translateY(-43px);
+}
+.error-text{
+    
+    font-size: 0.8rem;
+    font-style: italic;
+    font-weight: 500;
+    color: var(--Red);
+    text-align: end;
+    padding: 0.1rem;
+    
+}
+ 
+.btn{
+    width: 100%;
+    padding: 0.8rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 300;
+    margin: 0.5rem;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    background-color: var(--Green);
+    box-shadow: 0 4px hsl(154, 56%, 44%);
+}
+.btn:hover{
+    background-color: hsl(154, 88%, 63%);
+}
+.terms{
+    padding: 0.5rem;
+    font-size: 0.6rem;
+    text-align: center;
+    color: var(--GrayishBlue);
+    font-weight: 300;
+    font-family:Poppins;
+}
+.terms a{
+    color: var(--Red);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.attribution 
+{ 
+    font-size: 11px; 
+    text-align: center; 
+    margin: auto;
+    position: relative;
+    bottom: -15px;
+    color: var(--VeryDarkGrayishBlue);
+    font-family:Poppins;
+    font-weight: 600;
+}
+.attribution a 
+{ 
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+@media only screen and (max-width:425px){
+
+    body{
+        width: 100vw;
+        /* height: 100vh; */
+    }
+    .container{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+    .container1{
+        width: 100%;
+    }
+    .container1 h1{
+        /* border: 2px solid red; */
+        width: 90%;
+        margin-bottom: 1.3rem;
+        text-align: center;
+    
+    } 
+    .container1 p{
+        font-size: 1.1rem;
+        text-align: center;
+        padding: 0.5rem 0rem;
+        line-height: 1.7rem;
+     }
+    .container2{
+         width: 100%;
+    }
+    .error-icon{  
+    
+        position: absolute;
+        padding-top: 0.5rem;
+        right: 100px;
+       
+        transform: translateY(-45px);
+    }
+
+}
