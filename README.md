@@ -41,8 +41,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [(https://github.com/KJabeen/Intro-Component-with-Signup-Form)](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [(https://your-solution-url.com)](https://github.com/KJabeen/Intro-Component-with-Signup-Form))
+- Live Site URL: [(https://your-live-site-url.com)](https://kjabeen.github.io/Intro-Component-with-Signup-Form/)
 
 ## My process
 
